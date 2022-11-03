@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 
 
 def get_response(url):
-    response = requests.post(url)
+    response = requests.get(url)
     print(response)
     return response.json()
 
@@ -105,7 +105,7 @@ if (show_credit_decision):
 
             #Appel de l'API : 
 
-    API_url = "https://scoringmodelopen.herokuapp.com/predict?id_client=" + str(id_client)
+    API_url = "https://scoringmodelopen.herokuapp.com/predict?id_client" + str(id_client)
 
     json_url = get_response(API_url)
     st.write("## Json {}".format(json_url))
