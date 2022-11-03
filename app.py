@@ -23,7 +23,7 @@ warnings.filterwarnings("ignore")
 def get_response(url):
     response = requests.post(url)
     print(response)
-    return response.json()
+    return response
 
 #Chargement des données
 df = pd.read_csv('app_test.csv')       
