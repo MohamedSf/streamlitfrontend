@@ -105,8 +105,8 @@ if (show_credit_decision):
 
             #Appel de l'API : 
 
-    #API_url = "https://scoringmodelopen.herokuapp.com/predict?id_client" + str(id_client)
-    API_url = "https://scoringmodelopen.herokuapp.com/"
+    API_url = "https://scoringmodelopen.herokuapp.com/predict?id_client" + str(id_client)
+    #API_url = "https://scoringmodelopen.herokuapp.com/"
     json_url = get_response(API_url)
     st.write("## Json {}".format(json_url))
     API_data = json_url
