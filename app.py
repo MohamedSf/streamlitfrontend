@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 
 
 def get_response(url):
-    response = requests.get(url)
+    response = requests.post(url)
     print(response)
     return response.json()
 
