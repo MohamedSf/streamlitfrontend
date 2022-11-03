@@ -21,9 +21,9 @@ warnings.filterwarnings("ignore")
 
 
 def get_response(url):
-    response = requests.post(url)
+    response = requests.get(url)
     print(response)
-    return response
+    return response.json()
 
 #Chargement des données
 df = pd.read_csv('app_test.csv')       
